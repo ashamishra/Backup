@@ -6,6 +6,7 @@ read n
 #mkdir -p "$n"
 #ls  "$n"
 if [ -d  $n ]; then
+    abc=`date +"%d_%m_%y:%T"`_`basename $DIR`vi abc
     echo the directory exists!
     #tar -zcvf $(date '+%s').tar.gz $n
     tar -zcvf ~/Backup_dir/$(date '+%s').tar.gz $n
